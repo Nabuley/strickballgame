@@ -77,7 +77,7 @@ function play() {
         a=+splited_list[0];
         b=+splited_list[1];
         c=+splited_list[2];
-        if(a===NaN ||b===NaN || c===NaN){
+        if(isNaN(a) ||isNaN(b) || isNaN(c)){
             throw new Error('Invalid input');
         }
         chance -= 1;
